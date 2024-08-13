@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay'
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 function MainSkills() {
   const skills = [
@@ -33,34 +34,34 @@ function MainSkills() {
     },
     {
       name: "StreamLit",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg",
     },
     {
       name: "MySql",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
     },
     {
       name: "Arduino",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg",
     },
     {
       name: "Railway",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original-wordmark.svg",
     },
     {
       name: "Pandas",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
-    }
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
+    },
   ];
 
   return (
-    <div className="bg-slate-400 flex items-center justify-center py-16 flex-col h-screen gap-10">
+    <div className="bg-slate-400 flex items-center justify-center py-16 flex-col h-screen gap-10 relative">
       <div>
         <h2 className="text-2xl font-OleoScript text-cyan-950 sm:text-5xl">
           Top Languages and Tools
         </h2>
       </div>
-      
+
       <Swiper
         spaceBetween={20}
         slidesPerView={4}
@@ -70,8 +71,7 @@ function MainSkills() {
         pagination={{ clickable: true }}
         a11y={{ enabled: true }}
         rewind={true}
-        className="w-full"
-
+        className="w-full sm:w-4/5"
       >
         {skills.map((skill, index) => (
           <SwiperSlide key={index}>
@@ -83,6 +83,9 @@ function MainSkills() {
         ))}
       </Swiper>
 
+      <div className="absolute bottom-5 animate-bounce">
+        <KeyboardArrowDown className="text-bl text-5xl" />
+      </div>
     </div>
   );
 }
