@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y, Autoplay, } from "swiper/modules";
+import { Navigation, A11y, Autoplay, } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -23,10 +23,9 @@ function MainSkills() {
       <Swiper
         spaceBetween={20}
         slidesPerView={4}
-        modules={[Navigation, Pagination, A11y, Autoplay]}
+        modules={[Navigation, A11y, Autoplay]}
         autoplay={{ delay: 2000 }}
         navigation
-        pagination={{ clickable: true }}
         a11y={{ enabled: true }}
         loop={true}
         className="w-full sm:w-4/5"
