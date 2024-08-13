@@ -1,9 +1,10 @@
 import ArrowDown from "../ArrowDown";
+import Container from "../Container";
 import SocialMedias from "../SocialMedias";
 
 function MainBanner() {
   return (
-    <div className="bg-slate-800 h-screen flex items-center justify-center py-16 overflow-x-hidden flex-col gap-5">
+    <Container className="bg-slate-800">
         <div>
             <h1 className="font-OleoScript text-5xl text-white text-center sm:text-9xl">LUCAS GABRIEL</h1>
         </div>
@@ -15,7 +16,7 @@ function MainBanner() {
         </div>
 
         <ArrowDown className={"text-white"}/>
-    </div>
+    </Container>
   );
 }
 

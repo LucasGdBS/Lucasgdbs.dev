@@ -1,4 +1,5 @@
 import MainBanner from "./components/MainBanner";
+import MainProjects from "./components/MainProjects";
 import MainSkills from "./components/MainSkills";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <MainBanner />
       <MainSkills />
+      <MainProjects />
     </>
   );
 }

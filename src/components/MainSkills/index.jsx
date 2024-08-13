@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, A11y, Autoplay, } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import ArrowDown from "../ArrowDown";
+import Container from "../Container";
 
 function MainSkills() {
   const skills = [
@@ -52,10 +53,14 @@ function MainSkills() {
       name: "Pandas",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
     },
+    {
+      name: "TailWindCSS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+    }
   ];
 
   return (
-    <div className="bg-slate-400 flex items-center justify-center py-16 flex-col h-screen gap-10 relative">
+    <Container className={"bg-slate-400"}>
       <div>
         <h2 className="text-2xl font-OleoScript text-cyan-950 sm:text-5xl">
           Top Languages and Tools
@@ -70,7 +75,7 @@ function MainSkills() {
         navigation
         pagination={{ clickable: true }}
         a11y={{ enabled: true }}
-        rewind={true}
+        loop={true}
         className="w-full sm:w-4/5"
       >
         {skills.map((skill, index) => (
@@ -84,7 +89,7 @@ function MainSkills() {
       </Swiper>
 
       <ArrowDown className={"text-black"}/>
-    </div>
+    </Container>
   );
 }
 
