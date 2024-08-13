@@ -46,13 +46,17 @@ function MainSkills() {
     {
       name: "Railway",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original-wordmark.svg"
+    },
+    {
+      name: "Pandas",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
     }
   ];
 
   return (
     <div className="bg-slate-400 flex items-center justify-center py-16 flex-col h-screen gap-10">
       <div>
-        <h2 className="text-2xl font-Lobster text-cyan-950 sm:text-5xl">
+        <h2 className="text-2xl font-OleoScript text-cyan-950 sm:text-5xl">
           Top Languages and Tools
         </h2>
       </div>

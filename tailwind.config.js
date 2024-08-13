@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'Lobster': ['Lobster', 'sans-serif'],
+        'OleoScript': ['Oleo Script', 'cursive'],
       },
     },
   },
