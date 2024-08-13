@@ -1,5 +1,5 @@
+import ArrowDown from "../ArrowDown";
 import SocialMedias from "../SocialMedias";
-import { KeyboardArrowDown } from "@mui/icons-material";
 
 function MainBanner() {
   return (
@@ -14,9 +14,7 @@ function MainBanner() {
             <SocialMedias />
         </div>
 
-        <div className="absolute bottom-5 animate-bounce">
-            <KeyboardArrowDown className="text-white text-5xl" />
-        </div>
+        <ArrowDown className={"text-white"}/>
     </div>
   );
 }

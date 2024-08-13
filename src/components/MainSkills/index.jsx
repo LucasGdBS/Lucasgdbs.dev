@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import { KeyboardArrowDown } from "@mui/icons-material";
+import ArrowDown from "../ArrowDown";
 
 function MainSkills() {
   const skills = [
@@ -83,9 +83,7 @@ function MainSkills() {
         ))}
       </Swiper>
 
-      <div className="absolute bottom-5 animate-bounce">
-        <KeyboardArrowDown className="text-bl text-5xl" />
-      </div>
+      <ArrowDown className={"text-black"}/>
     </div>
   );
 }
