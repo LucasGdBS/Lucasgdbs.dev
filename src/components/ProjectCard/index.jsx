@@ -8,7 +8,7 @@ function ProjectCard({ project, className }) {
       <div className="flex flex-col gap-6">
         <div className="flex relative">
           <h3 className="text-6xl">{project.name}</h3>
-          <LanguagesBlock languages={["Python", "Pandas", "JavaScript", "React"]} />
+          <LanguagesBlock languages={project.languages} />
         </div>
         <h4 className="text-4xl ">{project.subtitle}</h4>
       </div>

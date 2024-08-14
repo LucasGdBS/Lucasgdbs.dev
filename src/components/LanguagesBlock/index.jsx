@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import languageList from "../../../topLanguages.json";
+import languageList from "../../../data/topLanguages.json";
 
 function LanguagesBlock({ languages }) {
   const skillList = languageList;

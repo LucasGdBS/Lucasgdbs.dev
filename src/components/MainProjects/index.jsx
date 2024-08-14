@@ -6,30 +6,10 @@ import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
+import projects from "../../../data/projects.json"
+
 
 function MainProjects() {
-
-  const projects = [
-    {
-      name: "Projeto 1",
-      subtitle: "Subtítulo do projeto 1",
-      link: "https://github.com",
-      description: "Descrição do projeto 1",
-    },
-    {
-      name: "Projeto 2",
-      subtitle: "Subtítulo do projeto 2",
-      link: "https://github.com",
-      description: "Descrição do projeto 2",
-    },
-    {
-      name: "Projeto 3",
-      subtitle: "Subtítulo do projeto 3",
-      link: "https://github.com",
-      description: "Descrição do projeto 3",
-    },
-  ];
-
   return (
     <Container className={"bg-zinc-600"}>
       <h2 className="text-5xl font-OleoScript text-emerald-600 sm:text-8xl">
