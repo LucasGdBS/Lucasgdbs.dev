@@ -12,7 +12,7 @@ function ProjectCard({ project = {}, className = "bg-black" }) {
         </div>
         <h4 className="text-4xl ">{project.subtitle}</h4>
       </div>
-      <div>
+      <div className="hidden lg:block">
         <p className="text-white text-xl">{project.description}</p>
       </div>
    </div>

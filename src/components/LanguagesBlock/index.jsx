@@ -5,7 +5,7 @@ function LanguagesBlock({ languages }) {
   const skillList = languageList;
 
   return (
-    <div className="grid grid-cols-2 gap-4 border-x-2 absolute right-0 p-6">
+    <div className="hidden lg:grid grid-cols-2 gap-4 border-x-2 absolute right-0 p-6">
       {languages.map((language, index) => {
         const skill = skillList.find((skill) => skill.name === language);
 

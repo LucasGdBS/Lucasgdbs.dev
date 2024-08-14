@@ -28,7 +28,7 @@ function MainProjects() {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <ProjectCard project={project} className="bg-orange-500"/>
+            <ProjectCard project={project} className="bg-neutral-600"/>
           </SwiperSlide>
         ))}
       </Swiper>
