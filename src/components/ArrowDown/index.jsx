@@ -5,7 +5,12 @@ import classNames from "classnames";
 function ArrowDown({ className }) {
   return (
     <div className="absolute bottom-5 animate-bounce">
-      <KeyboardArrowDown className={classNames("text-bl text-5xl", className)} />
+      <KeyboardArrowDown 
+        className={classNames(className)}
+        fontSize="large"
+        style={{fontSize: "50"}}
+      />
+      
     </div>
   );
 }
