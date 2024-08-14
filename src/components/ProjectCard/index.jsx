@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import LanguagesBlock from "../LanguagesBlock";
 
-function ProjectCard({ project, className }) {
+function ProjectCard({ project = {}, className = "bg-black" }) {
   return (
    <div className={classNames("text-white p-20 h-full flex flex-col gap-y-80", className)}>
       <div className="flex flex-col gap-6">
@@ -22,11 +22,6 @@ function ProjectCard({ project, className }) {
 ProjectCard.propTypes = {
   project: PropTypes.object,
   className: PropTypes.string, 
-};
-
-ProjectCard.defaultProps = {
-  project: {},
-  className: "bg-black",
 };
 
 export default ProjectCard;
