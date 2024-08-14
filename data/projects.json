@@ -1,20 +1,45 @@
 [
   {
-    "name": "Project 1",
-    "subtitle": "This is a subtitle of project 1",
-    "description": "This is a description of project 1",
+    "name": "Feed'N'Back Card Game",
+    "subtitle": "Um jogo de cartas para exercitar comunicação",
+    "description": "O Feed'N'Back surgiu como uma solução divertida para um proposito sério. A ideia é que as pessoas possam aprender a se comunicar com seus colegas de equipe de forma mais acertiva e não ofensiva. Afinal, a comunicação é a chave para o sucesso de qualquer projeto.",
+    "link": "https://github.com/LucasGdBS/trunfo-cesar",
+    "languages": ["JavaScript", "React", "TailWindCSS"]
+  },
+  {
+    "name": "FULL LCD Emulator",
+    "subtitle": "Um emulador de LCD para o Arduino",
+    "description": "O projeto consiste em um emulador de um display LCD de 16x2, que simula o funcionamento de um display real. Possibilitando a edição pixel a pixel, a inserção de caracteres, e a importação do código para ser usado em um projeto real.",
+    "link": "https://github.com/LucasGdBS/FULL_LCD_Emulator",
     "languages": ["HTML", "CSS", "JavaScript"]
   },
   {
-    "name": "Project 2",
-    "subtitle": "This is a subtitle of project 2",
-    "description": "This is a description of project 2",
-    "languages": ["HTML", "CSS", "JavaScript"]
+    "name": "Animal CRUD",
+    "subtitle": "CRUD de animais em um banco de dados",
+    "description": "O AnimalCRUd é o MVP (Minimum Viable Product) de um projeto que tem como objetivo criar um CRUD (Create, Read, Update, Delete) de animais, e implementar em uma interface web interativa.",
+    "link": "https://github.com/LucasGdBS/AnimalCRUD",
+    "languages": ["Python", "PostgreSQL", "StreamLit", "Sqlalchemy"]
   },
   {
-    "name": "Project 3",
-    "subtitle": "This is a subtitle of project 3",
-    "description": "This is a description of project 3",
-    "languages": ["HTML", "CSS", "JavaScript"]
+    "name": "RentUp",
+    "subtitle": "Um sistema de aluguel de equipamentos eletronicos",
+    "description": "O RentUP é uma API para gerenciamento de estoque, usuários e empréstimos para laboratórios maker",
+    "link": "https://github.com/LucasGdBS/RentUP",
+    "languages": ["Python", "FastAPI", "PostgreSQL", "Sqlalchemy"]
+  },
+  {
+    "name": "PuppyCore",
+    "subtitle": "Sistema para facilitar o atendimento de clinicas veterinarias",
+    "description": "tem como objetivo atender à clínicas e hospitais veterinários facilitando o acompanhamento do check up de saúde dos pets, tanto aos profissionais quanto aos tutores",
+    "link": "https://github.com/LucasGdBS/PuppyCore",
+    "languages": ["Python", "Django", "SQLite"]
+  },
+  {
+    "name": "CrabeatPlay",
+    "subtitle": "Brinquedo interativo de música",
+    "description": "O CrabeatPlay é um brinquedo interativo que toca música e permite que, através de sensores, o usuario interaja com a música",
+    "link": "https://github.com/LucasGdBS/CrabeatPlay",
+    "languages": ["Arduino", "Processing"]
   }
+
 ]
